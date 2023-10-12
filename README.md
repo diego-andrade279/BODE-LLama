@@ -37,6 +37,9 @@ Bode é um modelo de linguagem (LLM) para o português desenvolvido a partir do 
 Você pode usar o Bode facilmente com a biblioteca Transformers do HuggingFace. Aqui está um exemplo simples de como carregar o modelo e gerar texto:
 
 ```python
+from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
+from peft import PeftModel, PeftConfig
+
 config = PeftConfig.from_pretrained(llm_model)
 model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path, trust_remote_code=True, return_dict=True, load_in_8bit=True, device_map='auto')
 tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
@@ -104,11 +107,13 @@ Para perguntas, sugestões ou colaborações, entre em contato com [recogna-nlp@
 
 Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, cite-o da seguinte maneira:
 
-@misc{bode_2023,
-    author       = { GARCIA, Gabriel Lino and PAIOLA, Pedro Henrique and  MORELLI, Luis Henrique and CANDIDO, Giovani and CANDIDO JUNIOR, Arnaldo and GUILHERME, Ivan Rizzo and PAPA, João Paulo and PENTEADO, Bruno Elias},
-    title        = { {BODE} },
-    year         = 2023,
-    url          = { https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br },
-    doi          = { xxx },
-    publisher    = { Hugging Face }
-}
+```
+    @misc{bode_2023,
+        author       = { GARCIA, Gabriel Lino and PAIOLA, Pedro Henrique and  MORELLI, Luis Henrique and CANDIDO, Giovani and CANDIDO JUNIOR, Arnaldo and GUILHERME, Ivan Rizzo and PAPA, João Paulo and PENTEADO, Bruno Elias},
+        title        = { {BODE} },
+        year         = 2023,
+        url          = { https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br },
+        doi          = { xxx },
+        publisher    = { Hugging Face }
+    }
+```
