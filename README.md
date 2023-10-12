@@ -45,3 +45,24 @@ output = model.generate(input_ids, max_length=50, num_return_sequences=1)
 
 generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
 print(generated_text)
+```
+
+## Treinamento e Dados
+
+O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português. O dataset Alpaca contém X milhões de amostras de texto em português, coletadas de [fontes] e pré-processadas para o treinamento do modelo. O treinamento foi realizado com os seguintes hiperparâmetros: [inserir hiperparâmetros].
+
+## Contribuições
+
+Contribuições para a melhoria deste modelo são bem-vindas. Sinta-se à vontade para abrir problemas e solicitações pull.
+
+## Agradecimentos e Considerações
+
+Agracimentos aqui...
+
+## Contato
+
+Para perguntas, sugestões ou colaborações, entre em contato com [recogna-nlp@gmail.com].
+
+## Citação
+
+Se você usar o modelo Pessego em sua pesquisa ou projeto, por favor, cite-o da seguinte maneira:
