@@ -95,7 +95,8 @@ def evaluate(instruction, input=None):
         output = tokenizer.decode(s)
         print("Resposta:", output.split("### Resposta:")[1].strip())
 
-evaluate("O que é um bode?")
+evaluate("Responda com detalhes: O que é um bode?")
+#Exemplo de resposta obtida (pode variar devido a temperatura): Um bode é um animal do gênero Bubalus, da família Bovidae, que é um membro da ordem Artiodactyla. Os bodes são mamíferos herbívoros que são nativos da Ásia, África e Europa. Eles são conhecidos por seus cornos, que podem ser usados para defesa e como uma ferramenta.
 ```
 
 ## Treinamento e Dados
