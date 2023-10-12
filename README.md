@@ -65,4 +65,4 @@ Para perguntas, sugestões ou colaborações, entre em contato com [recogna-nlp@
 
 ## Citação
 
-Se você usar o modelo Pessego em sua pesquisa ou projeto, por favor, cite-o da seguinte maneira:
+Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, cite-o da seguinte maneira:
