@@ -32,6 +32,13 @@ Bode é um modelo de linguagem (LLM) para o português desenvolvido a partir do 
 - **Dataset de Treinamento:** Alpaca
 - **Idioma:** Português
 
+## Versões disponíveis
+
+| Quantidade de parâmetros       | Modelo                                                                                      | 
+| :-:                            | :-:                                                                                         | 
+| 7b                             |[recogna-nlp/bode-7b-alpaca-pt-br](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br)  |
+| 13b                            |[recogna-nlp/bode-13b-alpaca-pt-br](https://huggingface.co/recogna-nlp/bode-13b-alpaca-pt-br)|
+
 ## Uso
 
 Você pode usar o Bode facilmente com a biblioteca Transformers do HuggingFace. Aqui está um exemplo simples de como carregar o modelo e gerar texto:
@@ -93,7 +100,7 @@ evaluate("O que é um bode?")
 
 ## Treinamento e Dados
 
-O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através do projeto da Fundunesp em parceria com a Petrobras: 2019/00697-8 - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços.
+O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através do projeto da Fundunesp em parceria com a Petrobras: 2019/00697-8 - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços. O uso do Santos Dumont possibilitou o treinamento de modelos maiores, como o LLaMa2-13b.
 
 ## Contribuições
 
