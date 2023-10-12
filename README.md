@@ -18,7 +18,7 @@ tags:
 - Q&A
 ---
 
-<img src="bode-7b-alpaca-pt-br/Logo_Bode_LLM.jpg">
+<img src="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/edit/main/Logo_Bode_LLM.jpg">
 
 
 # BODE
