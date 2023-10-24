@@ -21,7 +21,7 @@ library_name: peft
 
 <br />
 <p align="center">
-  <a href="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/blob/main"
+  <a href="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/resolve/main"
     <img src="/Logo_Bode_LLM.jpg" alt="logo">
   </a>
 </p>
