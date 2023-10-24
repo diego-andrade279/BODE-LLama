@@ -19,16 +19,13 @@ tags:
 library_name: peft
 ---
 
+# BODE
+
 <!--- PROJECT LOGO -->
 <br />
 <p align="center">
   <img src="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/resolve/main/Logo_Bode_LLM.jpg" alt="Bode Logo" width="800" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
 </p>
-
-<!--- ![Logo Bode LLM](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/blob/main/Logo_Bode_LLM.jpg) -->
-
-
-# BODE
 
 Bode é um modelo de linguagem (LLM) para o português desenvolvido a partir do modelo Llama 2 por meio de fine-tuning no dataset Alpaca, traduzido para o português pelos autores do [Cabrita](https://huggingface.co/22h/cabrita-lora-v0-1). Este modelo é projetado para tarefas de processamento de linguagem natural em português, como geração de texto, tradução automática, resumo de texto e muito mais.
 
