@@ -23,7 +23,8 @@ library_name: peft
 <p align="center">
   <a href="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/tree/main"
     <img src="/Logo_Bode_LLM.jpg" alt="logo">
-</a>
+  </a>
+</p>
 <!--- ![Logo Bode LLM](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/blob/main/Logo_Bode_LLM.jpg) -->
 
 
