@@ -19,12 +19,12 @@ tags:
 library_name: peft
 ---
 
+<!--- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/resolve/main"
-    <img src="/Logo_Bode_LLM.jpg" alt="logo">
-  </a>
+  <img src="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/resolve/main/Logo_Bode_LLM.jpg" alt="Bode Logo" width="800" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
 </p>
+
 <!--- ![Logo Bode LLM](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/blob/main/Logo_Bode_LLM.jpg) -->
 
 
