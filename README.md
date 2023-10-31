@@ -104,7 +104,7 @@ evaluate("Responda com detalhes: O que é um bode?")
 
 ## Treinamento e Dados
 
-O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através do projeto da Fundunesp em parceria com a Petrobras: 2019/00697-8 - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços. O uso do Santos Dumont possibilitou o treinamento de modelos maiores, como o LLaMa2-13b.
+O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através do projeto da Fundunesp em parceria com a Petrobras.
 
 ## Contribuições
 
@@ -120,10 +120,10 @@ Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, 
 
 ```
     @misc{bode_2023,
-        author       = { GARCIA, Gabriel Lino and PAIOLA, Pedro Henrique and  MORELLI, Luis Henrique and CANDIDO, Giovani and CANDIDO JUNIOR, Arnaldo and GUILHERME, Ivan Rizzo and PAPA, João Paulo and PENTEADO, Bruno Elias},
-        title        = { {BODE} },
+        author       = { GARCIA, Gabriel Lino and PAIOLA, Pedro Henrique and  MORELLI, Luis Henrique and CANDIDO, Giovani and CANDIDO JUNIOR, Arnaldo and JODAS, Danilo Samuel and GUILHERME, Ivan Rizzo and PAPA, João Paulo and PENTEADO, Bruno Elias},
+        title        = { {BODE-7b} },
         year         = 2023,
-        url          = { https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br },
+        url          = { https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br},
         doi          = { xxx },
         publisher    = { Hugging Face }
     }
