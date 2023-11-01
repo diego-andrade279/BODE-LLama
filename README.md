@@ -17,6 +17,7 @@ tags:
 - Llama 2
 - Q&A
 library_name: peft
+inference: false
 ---
 
 # BODE
