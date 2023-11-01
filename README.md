@@ -125,7 +125,7 @@ Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, 
 
 ```
     @misc{bode7b_2023,
-        author       = { GARCIA, Gabriel Lino and PAIOLA, Pedro Henrique and  MORELLI, Luis Henrique and CANDIDO, Giovani and CANDIDO JUNIOR, Arnaldo and JODAS, Danilo Samuel and GUILHERME, Ivan Rizzo and PAPA, João Paulo and PENTEADO, Bruno Elias},
+        author       = { Garcia, Gabriel Lino and Paiola, Pedro Henrique and  Morelli, Luis Henrique and Candido, Giovani and Candido Junior, Arnaldo and Jodas, Danilo Samuel and Guilherme, Ivan Rizzo and Papa, João Paulo and Penteado, Bruno Elias},
         title        = { {BODE-7b} },
         year         = 2023,
         url          = { https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br},
