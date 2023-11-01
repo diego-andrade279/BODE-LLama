@@ -128,7 +128,7 @@ Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, 
         title        = { {BODE-7b} },
         year         = 2023,
         url          = { https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br},
-        doi          = { xxx },
+        doi          = { 10.57967/hf/1298 },
         publisher    = { Hugging Face }
     }
 ```
