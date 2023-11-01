@@ -104,11 +104,15 @@ evaluate("Responda com detalhes: O que é um bode?")
 
 ## Treinamento e Dados
 
-O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através de um projeto da Fundunesp em parceria com a Petrobras.
+O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através do projeto da Fundunesp 2019/00697-8.
 
 ## Contribuições
 
 Contribuições para a melhoria deste modelo são bem-vindas. Sinta-se à vontade para abrir problemas e solicitações pull.
+
+## Agradecimentos
+
+Agradecemos ao Laboratório Nacional de Computação Científica (LNCC/MCTI, Brasil) por prover os recursos de CAD do supercomputador SDumont.
 
 ## Contato
 
@@ -119,7 +123,7 @@ Para perguntas, sugestões ou colaborações, entre em contato com [recogna-nlp@
 Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, cite-o da seguinte maneira:
 
 ```
-    @misc{bode_2023,
+    @misc{bode7b_2023,
         author       = { GARCIA, Gabriel Lino and PAIOLA, Pedro Henrique and  MORELLI, Luis Henrique and CANDIDO, Giovani and CANDIDO JUNIOR, Arnaldo and JODAS, Danilo Samuel and GUILHERME, Ivan Rizzo and PAPA, João Paulo and PENTEADO, Bruno Elias},
         title        = { {BODE-7b} },
         year         = 2023,
