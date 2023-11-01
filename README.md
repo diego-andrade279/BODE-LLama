@@ -116,8 +116,5 @@ Contribuições para a melhoria deste modelo são bem-vindas. Sinta-se à vontad
 
 Agradecemos ao Laboratório Nacional de Computação Científica (LNCC/MCTI, Brasil) por prover os recursos de CAD do supercomputador SDumont.
 
-## Contato
-
-Para perguntas, sugestões ou colaborações, entre em contato com [recogna-nlp@gmail.com].
 
 ```
