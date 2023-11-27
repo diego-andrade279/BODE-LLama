@@ -22,6 +22,8 @@ inference: false
 
 # BODE
 
+## Aviso: O artigo descrevendo o modelo BODE foi submetido a uma conferência internacional na área de Processamento de Linguagem Natural em Português e está atualmente em processo de avaliação. Mais detalhes sobre a citação da pesquisa serão fornecidos após a aceitação do manuscrito.
+
 <!--- PROJECT LOGO -->
 <p align="center">
   <img src="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/resolve/main/Logo_Bode_LLM_Circle.png" alt="Bode Logo" width="400" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
