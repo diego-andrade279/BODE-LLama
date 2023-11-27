@@ -22,7 +22,7 @@ inference: false
 
 # BODE
 
-## Aviso: O artigo descrevendo o modelo BODE foi submetido a uma conferência internacional na área de Processamento de Linguagem Natural em Português e está atualmente em processo de avaliação. Mais detalhes sobre a citação da pesquisa serão fornecidos após a aceitação do manuscrito.
+## Aviso: O artigo do modelo BODE foi recentemente submetido à uma conferência internacional na área de Processamento de Linguagem Natural do idioma Português e está momentaneamente em processo de avaliação. Detalhes adicionais acerca da citação do modelo serão fornecidos após a aceitação do manuscrito.
 
 <!--- PROJECT LOGO -->
 <p align="center">
