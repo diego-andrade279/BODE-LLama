@@ -47,21 +47,28 @@ O objetivo do desenvolvimento do BODE é suprir a escassez de LLMs para a língu
 
 ## Uso
 
-Você pode usar o Bode facilmente com a biblioteca Transformers do HuggingFace. Aqui está um exemplo simples de como carregar o modelo e gerar texto:
+Recomendamos fortemente que utilizem o Kaggle com GPU. Você pode usar o Bode facilmente com a biblioteca Transformers do HuggingFace. Entretanto, é necessário ter a autorização de acesso ao LLaMa 2. Abaixo, colocamos um exemplo simples de como carregar o modelo e gerar texto:
 
 ```python
+
+# Downloads necessários
+!pip install transformers
+!pip install einops accelerate bitsandbytes
+!pip install sentence_transformers
+!pip install git+https://github.com/huggingface/peft.git
+
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 from peft import PeftModel, PeftConfig
 
 llm_model = 'recogna-nlp/bode-7b-alpaca-pt-br'
+hf_auth = 'HF_ACCESS_KEY'
 config = PeftConfig.from_pretrained(llm_model)
-model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path, trust_remote_code=True, return_dict=True, load_in_8bit=True, device_map='auto')
-tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
-model = PeftModel.from_pretrained(model, llm_model)
+model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path, trust_remote_code=True, return_dict=True, load_in_8bit=True, device_map='auto', token=hf_auth)
+tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path, token=hf_auth)
+model = PeftModel.from_pretrained(model, llm_model) # Caso ocorra o seguinte erro: "ValueError: We need an `offload_dir`... Você deve acrescentar o parâmetro: offload_folder="./offload_dir".
 model.eval()
 
 #Testando geração de texto
-
 def generate_prompt(instruction, input=None):
     if input:
         return f"""Abaixo está uma instrução que descreve uma tarefa, juntamente com uma entrada que fornece mais contexto. Escreva uma resposta que complete adequadamente o pedido.
@@ -84,7 +91,8 @@ def generate_prompt(instruction, input=None):
 generation_config = GenerationConfig(
     temperature=0.2,
     top_p=0.75,
-    num_beams=4,
+    num_beams=2,
+    do_sample=True
 )
 
 def evaluate(instruction, input=None):
@@ -96,7 +104,7 @@ def evaluate(instruction, input=None):
         generation_config=generation_config,
         return_dict_in_generate=True,
         output_scores=True,
-        max_new_tokens=256
+        max_length=300
     )
     for s in generation_output.sequences:
         output = tokenizer.decode(s)
