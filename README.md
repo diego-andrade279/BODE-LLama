@@ -48,6 +48,7 @@ O objetivo do desenvolvimento do BODE é suprir a escassez de LLMs para a língu
 ## Uso
 
 Recomendamos fortemente que utilizem o Kaggle com GPU. Você pode usar o Bode facilmente com a biblioteca Transformers do HuggingFace. Entretanto, é necessário ter a autorização de acesso ao LLaMa 2. Abaixo, colocamos um exemplo simples de como carregar o modelo e gerar texto:
+Também disponibilizamos um jupyter notebook no Google Colab, [clique aqui](https://colab.research.google.com/drive/1EBS1uNT09fqlwnXf_lyDtfYyuF4Ow0Pq?usp=sharing) para acessar.
 
 ```python
 
