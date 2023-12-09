@@ -22,8 +22,6 @@ inference: false
 
 # BODE
 
-## Aviso: O artigo do modelo BODE foi recentemente submetido à uma conferência internacional na área de Processamento de Linguagem Natural do idioma Português e está momentaneamente em processo de avaliação. Detalhes adicionais acerca da citação do modelo serão fornecidos após a aceitação do manuscrito.
-
 <!--- PROJECT LOGO -->
 <p align="center">
   <img src="https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br/resolve/main/Logo_Bode_LLM_Circle.png" alt="Bode Logo" width="400" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
@@ -119,6 +117,21 @@ evaluate("Responda com detalhes: O que é um bode?")
 ## Treinamento e Dados
 
 O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português, que consiste em um Instruction-based dataset. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através do projeto da Fundunesp 2019/00697-8.
+
+## Citação
+
+Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, cite-o da seguinte maneira:
+
+```
+    @misc{bode7b_2023,
+        author       = { Garcia, Gabriel Lino and Paiola, Pedro Henrique and Morelli, Luis Henrique and Candido, Giovani and Candido Junior, Arnaldo and Jodas, Danilo Samuel and Guilherme, Ivan Rizzo and Papa, João Paulo and Penteado, Bruno Elias},
+        title        = { {BODE-7b} },
+        year         = 2023,
+        url          = { https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br},
+        doi          = { 10.57967/hf/1298 },
+        publisher    = { Hugging Face }
+    }
+```
 
 ## Contribuições
 
