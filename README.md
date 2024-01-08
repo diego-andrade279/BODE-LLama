@@ -30,7 +30,7 @@ inference: false
 Bode é um modelo de linguagem (LLM) para o português desenvolvido a partir do modelo Llama 2 por meio de fine-tuning no dataset Alpaca, traduzido para o português pelos autores do Cabrita. Este modelo é projetado para tarefas de processamento de linguagem natural em português, como geração de texto, tradução automática, resumo de texto e muito mais. 
 O objetivo do desenvolvimento do BODE é suprir a escassez de LLMs para a língua portuguesa. Modelos clássicos, como o próprio LLaMa, são capazes de responder prompts em português, mas estão sujeitos a muitos erros de gramática e, por vezes, geram respostas na língua inglesa. Ainda há poucos modelos em português disponíveis para uso gratuito e, segundo nosso conhecimento, não modelos disponíveis com 13b de parâmetros ou mais treinados especificamente com dados em português.
 
-Este [artigo](https://arxiv.org/abs/2401.02909) discute o modelo com mais detalhes.
+Se você deseja utilizar o Bode em sua pesquisa, pode citar este [artigo](https://arxiv.org/abs/2401.02909) que discute o modelo com mais detalhes. 
 
 ## Detalhes do Modelo
 
@@ -126,9 +126,9 @@ Se você usar o modelo de linguagem Bode em sua pesquisa ou projeto, por favor, 
 
 ```
     @misc{bode7b_2023,
-        author       = {Garcia, Gabriel Lino and Paiola, Pedro Henrique and Morelli, Luis Henrique and Candido, Giovani and Candido Junior, Arnaldo and Jodas, Danilo Samuel and Guilherme, Ivan Rizzo and Papa, João Paulo and Penteado, Bruno Elias},
-        title        = {{BODE-7b}},
-        year         = 2023,
+        author       = {Garcia, Gabriel Lino and Paiola, Pedro Henrique and Morelli, Luis Henrique and Candido, Giovani and Candido Junior, Arnaldo and Jodas, Danilo Samuel and Afonso, Luis C. S and Guilherme, Ivan Rizzo and Papa, João Paulo and Penteado, Bruno Elias},
+        title        = {BODE-7b},
+        year         = {2023},
         url          = {https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br},
         doi          = {10.57967/hf/1298},
         publisher    = {Hugging Face}
