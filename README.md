@@ -41,10 +41,14 @@ Acesse o [artigo](https://arxiv.org/abs/2401.02909) para mais informações sobr
 
 ## Versões disponíveis
 
-| Quantidade de parâmetros       | Modelo                                                                                      | 
-| :-:                            | :-:                                                                                         | 
-| 7b                             |[recogna-nlp/bode-7b-alpaca-pt-br](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br)  |
-| 13b                            |[recogna-nlp/bode-13b-alpaca-pt-br](https://huggingface.co/recogna-nlp/bode-13b-alpaca-pt-br)|
+| Quantidade de parâmetros       | PEFT | Modelo                                                                                      | 
+| :-:                            | :-:  |  :-:                                                                                         | 
+| 7b                             | &check; | [recogna-nlp/bode-7b-alpaca-pt-br](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br)  |
+| 13b                            | &check; | [recogna-nlp/bode-13b-alpaca-pt-br](https://huggingface.co/recogna-nlp/bode-13b-alpaca-pt-br)|
+| 7b                             |    | [recogna-nlp/bode-7b-alpaca-pt-br-no-peft](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br-no-peft)  |
+| 13b                             |    | [recogna-nlp/bode-13b-alpaca-pt-br-no-peft](https://huggingface.co/recogna-nlp/bode-13b-alpaca-pt-br-no-peft)  |
+| 7b-gguf                             |    | [recogna-nlp/bode-7b-alpaca-pt-br-gguf](https://huggingface.co/recogna-nlp/bode-7b-alpaca-pt-br-gguf)  |
+| 13b-gguf                             |    | [recogna-nlp/bode-13b-alpaca-pt-br-gguf](https://huggingface.co/recogna-nlp/bode-13b-alpaca-pt-br-gguf)  |
 
 ## Uso
 
@@ -144,6 +148,3 @@ Contribuições para a melhoria deste modelo são bem-vindas. Sinta-se à vontad
 ## Agradecimentos
 
 Agradecemos ao Laboratório Nacional de Computação Científica (LNCC/MCTI, Brasil) por prover os recursos de CAD do supercomputador SDumont.
-
-
-```
