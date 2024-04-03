@@ -1,14 +1,9 @@
 ---
-license: mit
 language:
 - pt
 - en
-metrics:
-- accuracy
-- f1
-- precision
-- recall
-pipeline_tag: text-generation
+license: mit
+library_name: peft
 tags:
 - LLM
 - Portuguese
@@ -16,8 +11,134 @@ tags:
 - Alpaca
 - Llama 2
 - Q&A
-library_name: peft
+metrics:
+- accuracy
+- f1
+- precision
+- recall
+pipeline_tag: text-generation
 inference: false
+model-index:
+- name: bode-7b-alpaca-pt-br
+  results:
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: ENEM Challenge (No Images)
+      type: eduagarcia/enem_challenge
+      split: train
+      args:
+        num_few_shot: 3
+    metrics:
+    - type: acc
+      value: 34.36
+      name: accuracy
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: BLUEX (No Images)
+      type: eduagarcia-temp/BLUEX_without_images
+      split: train
+      args:
+        num_few_shot: 3
+    metrics:
+    - type: acc
+      value: 28.93
+      name: accuracy
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: OAB Exams
+      type: eduagarcia/oab_exams
+      split: train
+      args:
+        num_few_shot: 3
+    metrics:
+    - type: acc
+      value: 30.84
+      name: accuracy
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: Assin2 RTE
+      type: assin2
+      split: test
+      args:
+        num_few_shot: 15
+    metrics:
+    - type: f1_macro
+      value: 79.83
+      name: f1-macro
+    - type: pearson
+      value: 43.47
+      name: pearson
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: FaQuAD NLI
+      type: ruanchaves/faquad-nli
+      split: test
+      args:
+        num_few_shot: 15
+    metrics:
+    - type: f1_macro
+      value: 67.45
+      name: f1-macro
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: HateBR Binary
+      type: eduagarcia/portuguese_benchmark
+      split: test
+      args:
+        num_few_shot: 25
+    metrics:
+    - type: f1_macro
+      value: 85.06
+      name: f1-macro
+    - type: f1_macro
+      value: 65.73
+      name: f1-macro
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: tweetSentBR
+      type: eduagarcia-temp/tweetsentbr
+      split: test
+      args:
+        num_few_shot: 25
+    metrics:
+    - type: f1_macro
+      value: 43.25
+      name: f1-macro
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
 ---
 
 # BODE
@@ -148,3 +269,19 @@ Contribuições para a melhoria deste modelo são bem-vindas. Sinta-se à vontad
 ## Agradecimentos
 
 Agradecemos ao Laboratório Nacional de Computação Científica (LNCC/MCTI, Brasil) por prover os recursos de CAD do supercomputador SDumont.
+# [Open Portuguese LLM Leaderboard Evaluation Results](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard)
+Detailed results can be found [here](https://huggingface.co/datasets/eduagarcia-temp/llm_pt_leaderboard_raw_results/tree/main/recogna-nlp/bode-7b-alpaca-pt-br)
+
+|          Metric          |  Value  |
+|--------------------------|---------|
+|Average                   |**53.21**|
+|ENEM Challenge (No Images)|    34.36|
+|BLUEX (No Images)         |    28.93|
+|OAB Exams                 |    30.84|
+|Assin2 RTE                |    79.83|
+|Assin2 STS                |    43.47|
+|FaQuAD NLI                |    67.45|
+|HateBR Binary             |    85.06|
+|PT Hate Speech Binary     |    65.73|
+|tweetSentBR               |    43.25|
+
