@@ -82,6 +82,19 @@ model-index:
     - type: f1_macro
       value: 79.83
       name: f1-macro
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: Assin2 STS
+      type: eduagarcia/portuguese_benchmark
+      split: test
+      args:
+        num_few_shot: 15
+    metrics:
     - type: pearson
       value: 43.47
       name: pearson
@@ -109,7 +122,7 @@ model-index:
       name: Text Generation
     dataset:
       name: HateBR Binary
-      type: eduagarcia/portuguese_benchmark
+      type: ruanchaves/hatebr
       split: test
       args:
         num_few_shot: 25
@@ -117,6 +130,19 @@ model-index:
     - type: f1_macro
       value: 85.06
       name: f1-macro
+    source:
+      url: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard?query=recogna-nlp/bode-7b-alpaca-pt-br
+      name: Open Portuguese LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: PT Hate Speech Binary
+      type: hate_speech_portuguese
+      split: test
+      args:
+        num_few_shot: 25
+    metrics:
     - type: f1_macro
       value: 65.73
       name: f1-macro
