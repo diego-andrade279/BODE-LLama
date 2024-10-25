@@ -179,6 +179,8 @@ O objetivo do desenvolvimento do BODE é suprir a escassez de LLMs para a língu
 
 Acesse o [artigo](https://arxiv.org/abs/2401.02909) para mais informações sobre o Bode. 
 
+A versão do modelo Bode disponibilizada nesta página foi treinado com os recursos internos disponíveis no laboratório de pesquisas avançadas do Recogna. Em breve, após as devidas autorizações, devemos disponibilizar a versão original do modelo, treinada no Santos Dumont. 
+
 
 ## Detalhes do Modelo
 
@@ -270,7 +272,7 @@ evaluate("Responda com detalhes: O que é um bode?")
 
 ## Treinamento e Dados
 
-O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português, que consiste em um Instruction-based dataset. O treinamento foi realizado no Supercomputador Santos Dumont do LNCC, através do projeto da Fundunesp 2019/00697-8.
+O modelo Bode foi treinado por fine-tuning a partir do modelo Llama 2 usando o dataset Alpaca em português, que consiste em um Instruction-based dataset. O treinamento foi originalmente realizado no Supercomputador Santos Dumont do LNCC, através do projeto Fundunesp 2019/00697-8, mas a versão disponibilizada aqui é uma réplica, treinada com mesmos dados e parâmetros no ambiente interno do Recogna.
 
 ## Citação
 
